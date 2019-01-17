@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('/assets/BebasNeue');
+}
+body {
+  background: url( asset-path('background1.jpg') ) no-repeat;
+  background-size: 100% 400%;
+}
+
+body {
+  margin: 42px;
+}
+
+h1 {
+  font-family: "Bebas Neue";
+}
+p {
+  font-family: "Bebas Neue";
+}
+h2 {
+  font-family: "Bebas Neue";
+}

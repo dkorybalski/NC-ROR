@@ -1,0 +1,21 @@
+<h1>List of quotations</h1>
+<%= link_to 'New citation', new_citation_path %>
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+
+  <% @citations.each do |citation| %>
+    <tr>
+      <td><%= citation.nick %></td>
+      <td><%= citation.text %></td>
+      <td><%= link_to 'Show', citation_path(citation) %></td>
+      <td><%= link_to 'Edit', edit_citation_path(citation) %></td>
+      <td><%= link_to 'Delete', citation_path(citation),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

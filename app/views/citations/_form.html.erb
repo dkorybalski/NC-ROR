@@ -1,0 +1,31 @@
+<h1>New Citation</h1>
+<%= form_with scope: :citation, url: citations_path, local: true do |form| %>
+
+<% if @citation.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@citation.errors.count, "error") %> prohibited
+      this citation from being saved:
+    </h2>
+    <ul>
+      <% @citation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <p>
+    <%= form.label :author %><br>
+    <%= form.text_field :nick %>
+  </p>
+
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
