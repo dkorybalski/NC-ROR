@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Bebas Neue";
-  src: url('/assets/BebasNeue');
+  src: url('/assets/fonts/BebasNeue');
 }
 body {
-  background: url("background1.jpg") no-repeat center center fixed; 
+  background: url('/assets/images/background1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
