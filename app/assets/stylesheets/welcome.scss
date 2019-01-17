@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Bebas Neue";
-  src: url('/assets/BebasNeue');
+  src: font-url('/assets/BebasNeue');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background: url( asset-path('background1.jpg') ) no-repeat center center fixed;
